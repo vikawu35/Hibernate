@@ -12,6 +12,10 @@ import java.util.Properties;
 
 public class Util {
     private static SessionFactory sessionFactory;
+
+    private Util() {
+    }
+    
     public static SessionFactory getSessionFactory() {
         if (sessionFactory == null) {
             try {
